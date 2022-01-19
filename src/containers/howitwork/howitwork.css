@@ -1,95 +1,69 @@
-.screenshot__container {
-  padding: 0 200px ;
+.howitwork__container {
+  text-align: center;
+  position: relative;
 }
 
-.screenshot__content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 100px;
+.howitwork__line {
+  height: 1px;
+  width: 80vw;
+  margin: 0 auto;
+  border: 1px solid #E4E4E4;
+  margin-top: 590px;
+  margin-bottom: 67px;
 }
 
-.screenshot__content:nth-child(2) {
-  flex-direction: row-reverse;
-  margin-left: -61px;
+.mobile__title {
+  display: none;
 }
 
-.screenshot__content:nth-child(2) .screenshot__content-text {
-  margin-right: 0px;
-  margin-left: 100px;
+.howitwork__content {
+
 }
 
-.screenshot__content-text {
-  margin-right: 100px;
-  max-width: 480px;
+.howitwork__content h1 {
+  font-family: var(--font-family-title);
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  color: #000000;
+  opacity: 0.8;
 }
 
-.screenshot__content-text h2 {
-  font-size: 40px;
-  line-height: 47px;
-  color: var(--color-text);
-  margin: 30px 0px;
+.howitwork__content {
+
 }
 
-.screenshot__content-text p {
-  font-size: 18px;
-  line-height: 150%;
-  color: var(--color-text-secondary);
-  margin: 30px 0px;
-}
 
-.screenshot__content-img img {
-  width: 100%;
-  max-width: 600px;
-  max-height: 410px;
-  min-width: 400px;
-}
-
-@media screen and (max-width: 1250px) {
-  .screenshot__content-text h2 {
-    font-size: 30px;
-    line-height: 37px;
-  }
-
-  .screenshot__content-text p {
-    font-size: 16px;
-    line-height: 130%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .screenshot__content {
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .screenshot__content-text {
-    margin: 0;
-  }
-
-  .screenshot__content:nth-child(2) {
-    flex-direction: row-reverse;
-    margin: 0px;
-  }
-  
-  .screenshot__content:nth-child(2) .screenshot__content-text {
-    margin: 0px;
-  }
-
-  .screenshot__container {
-    padding: 4rem;
-  }
-}
 
 @media screen and (max-width: 590px) {
-  .screenshot__container {
-    padding: 2rem;
+  .howitwork__line {
+    margin-top: 130vw;
+    margin-bottom: 47px;
+    width: 90vw;
   }
-  
-  .screenshot__content-img img {
-    width: 100%;
-    max-width: 600px;
-    max-height: 410px;
-    min-width: 100px;
+
+  .howitwork__content h1 {
+    display: none;
+  }
+
+  .mobile__title {
+    display: flex;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -69px);
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 351px) {
+  .howitwork__line {
+    margin-top: 150vw;
   }
 }
