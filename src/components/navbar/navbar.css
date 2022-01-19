@@ -29,15 +29,6 @@
   justify-content: space-between;
 }
 
-.navbar__sign {
-  color: var(--color-text-secondary);
-  width: 250px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex: none;
-}
-
 .navbar-menu {
   margin-left: 1rem;
   display: none;
@@ -73,10 +64,6 @@
 
 .navbar-menu_container a {
   font-weight: 700;
-}
-
-.navbar-menu_container-links-sign {
-  display: none;
 }
 
 @media screen and (max-width: 1450px) {
@@ -117,13 +104,5 @@
 
   .navbar__links-container {
     display: none;
-  }
-
-  .navbar__sign {
-    display: none;
-  }
-
-  .navbar-menu_container-links-sign {
-    display: block;
   }
 }

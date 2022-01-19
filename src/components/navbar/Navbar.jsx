@@ -23,10 +23,6 @@ const Navbar = () => {
           <Menu />
         </div>
       </div>
-      <div className="navbar__sign">
-        <p><a href="#home">Sign in</a></p>
-        <p className="rounded__btn-no_bg"><a href="#home">Sign Up</a></p>
-      </div>
 
       <div className="navbar-menu">
         {toggleMenu
@@ -37,10 +33,6 @@ const Navbar = () => {
           <div className="navbar-menu_container scale-up-center">
             <div className="navbar-menu_container-links">
               <Menu />
-              <div className="navbar-menu_container-links-sign">
-                <p><a href="#home">Sign in</a></p>
-                <p className="rounded__btn-no_bg"><a href="#home">Sign Up</a></p>
-              </div>
             </div>
           </div>
         )}
