@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import './navbar.css'
 
+import logo from '../../assets/logo.png'
+
 const Menu = () => (
   <>
-    <p><a href="#features">Products</a></p>
-    <p><a href="#pricing">Pricing</a></p>
-    <p><a href="#faq">FAQ</a></p>
-    <p><a href="#blog">Blog</a></p>
+    <p><a href="#home">Home</a></p>
+    <p><a href="#product">Product</a></p>
+    <p><a href="#faq">Faq</a></p>
     <p><a href="#contact">Contact</a></p>
   </>
 )
@@ -17,8 +18,8 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
+      <img src={logo} alt="logo" id="home" />
       <div className="navbar__links">
-        <img src='logo' alt="logo" id="home" />
         <div className="navbar__links-container">
           <Menu />
         </div>
@@ -26,8 +27,8 @@ const Navbar = () => {
 
       <div className="navbar-menu">
         {toggleMenu
-          ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />
+          ? <RiCloseLine size={27} onClick={() => setToggleMenu(false)} />
+          : <RiMenu3Line size={27} onClick={() => setToggleMenu(true)} />
         }
         {toggleMenu && (
           <div className="navbar-menu_container scale-up-center">
