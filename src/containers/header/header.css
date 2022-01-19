@@ -6,6 +6,7 @@
       rgba(0, 0, 0, 0.3)
     ),
     url('../../assets/header.png');
+  background-size: cover;
   text-align: center;
   height: 618px;
 }
@@ -73,6 +74,12 @@
 
 .two__phone {
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1990px) {
+  .header__container {
+    height: 918px;
+  }
 }
 
 @media screen and (max-width: 890px) {
