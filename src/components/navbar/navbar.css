@@ -1,0 +1,129 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 3rem 210px;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar__links img {
+  width: 184.02px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.navbar__links-container {
+  width: 352px;
+  height: 19px;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-text-secondary);
+  margin-left: 81px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__sign {
+  color: var(--color-text-secondary);
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: none;
+}
+
+.navbar-menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+  align-items: center;
+}
+
+.navbar-menu svg {
+  cursor: pointer;
+}
+
+.navbar-menu_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.36);
+}
+
+.navbar-menu_container p {
+  margin: 1rem 0;
+}
+
+.navbar-menu_container a {
+  font-weight: 700;
+}
+
+.navbar-menu_container-links-sign {
+  display: none;
+}
+
+@media screen and (max-width: 1450px) {
+  .navbar {
+    padding: 3rem 100px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .navbar {
+    padding: 3rem 50px;
+  }
+
+  .navbar__links-container {
+    margin-left: 21px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .navbar-menu {
+    display: flex;
+  }
+
+  .navbar__links-container {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 620px) {
+  .navbar {
+    padding: 3rem 3rem;
+  }
+
+  .navbar-menu_container {
+    top: 20px;
+  }
+
+  .navbar__links-container {
+    display: none;
+  }
+
+  .navbar__sign {
+    display: none;
+  }
+
+  .navbar-menu_container-links-sign {
+    display: block;
+  }
+}

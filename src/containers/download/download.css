@@ -1,0 +1,97 @@
+.pricing__container {
+  padding-top: 360px;
+}
+
+.pricing__header {
+  text-align: center;
+}
+
+.pricing__header h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.pricing__header p {
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.pricing__container-cards {
+  display: flex;
+  justify-content: center;
+  max-width: 1480px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Midle card */
+.pricing__container-cards .card__container:nth-child(2) {
+  background-color: #FFF;
+  opacity: 1;
+  box-shadow: 0px 18px 50px -15px #060F28;
+  margin: 80px 0;
+}
+
+.pricing__container-cards .card__container:nth-child(2) h2{
+  color: var(--color-text);
+}
+
+.pricing__container-cards .card__container:nth-child(2) span{
+  color: var(--color-text);
+}
+
+.pricing__container-cards .card__container:nth-child(2) .card__line {
+  background: #D3D9E9;
+}
+
+.pricing__container-cards .card__container:nth-child(2) a{
+  background-color: var(--color-btn);
+  border: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .pricing__container {
+    margin-top: -300px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .pricing__container {
+    padding-top: 460px;
+  }
+
+  .pricing__container-cards .card__container:nth-child(2) {
+    margin: 80px;
+  }
+
+  .pricing__container {
+    margin-top: -300px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .pricing__container {
+    margin-top: -350px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .pricing__container {
+    padding-top: 500px;
+    margin-top: -400px;
+  }
+
+  .pricing__container-cards .card__container:nth-child(2) {
+    margin: 40px;
+  }
+
+  .card__container {
+    margin: 40px 0;
+  }
+}
