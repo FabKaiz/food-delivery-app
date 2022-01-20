@@ -32,7 +32,25 @@
   line-height: 28px;
   letter-spacing: 0.2px;
   color: var(--color-text);
+  position: relative;
+
 }
+
+.navbar__links-container a::before {
+  position: absolute;
+  bottom: -4px;
+  content: '';
+  height: 2px;
+  width: 10%;
+  background: var(--color-text);
+  opacity: 0;
+  transition: opacity 0.3s ease, width 0.5s ease;
+} 
+
+.navbar__links-container a:hover::before {
+  width: 100%;
+  opacity: 1;
+} 
 
 .navbar-menu {
   margin-left: 1rem;
