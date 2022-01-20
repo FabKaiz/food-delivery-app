@@ -2,7 +2,7 @@
 
 Responsive food delivery app website created with React and React icon.
 
-Live website: 🍔
+Live website: 🍔 [here]( https://bella-olonje-delivery.netlify.app/)
 
 Figma: https://www.figma.com/file/KawxNnCZ1epHjQu0wSqlG2/Food-delivery-app-Ui-kit?node-id=0%3A1
 
