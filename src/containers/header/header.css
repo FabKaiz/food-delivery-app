@@ -62,6 +62,15 @@
   line-height: 36px;
   padding: 16px 58px;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button__header:hover {
+  box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.5);
+}
+
+.button__header.no__bg:hover {
+  box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.5);
 }
 
 .no__bg {
