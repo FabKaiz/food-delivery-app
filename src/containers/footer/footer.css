@@ -25,6 +25,7 @@
   color: var(--color-btn);
   fill: var(--color-btn);
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .footer__socials {
@@ -32,6 +33,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.footer__container svg:hover {
+  filter: drop-shadow( 4px 4px 8px rgba(183, 50, 39, .5));
 }
 
 .footer__container p {
