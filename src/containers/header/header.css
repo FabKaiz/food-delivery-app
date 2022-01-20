@@ -62,7 +62,7 @@
 }
 
 .no__bg {
-  background: transparent;
+  background: transparent !important;
   border: 1px solid #fff;
   margin-left: 34px;
 }
