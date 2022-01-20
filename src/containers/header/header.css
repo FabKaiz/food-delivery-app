@@ -74,6 +74,7 @@
 
 .two__phone {
   margin-top: 20px;
+  filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.21));
 }
 
 @media screen and (min-width: 1990px) {

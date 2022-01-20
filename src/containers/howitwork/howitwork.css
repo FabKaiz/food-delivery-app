@@ -16,10 +16,6 @@
   display: none;
 }
 
-.howitwork__content {
-
-}
-
 .howitwork__content h1 {
   font-family: var(--font-family-title);
   font-weight: 600;
@@ -30,17 +26,23 @@
   opacity: 0.8;
 }
 
-.howitwork__content {
-
+.howitwork__content-screenshots-container .screenshot__card:nth-child(2) {
+  flex-direction: row-reverse;
 }
-
+ 
 @media screen and (min-width: 1990px) {
   .howitwork__line {
     margin-top: 290px;
   }
 }
 
+@media screen and (max-width: 1150px) {
 
+  .howitwork__content-screenshots-container .screenshot__card:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+}
 
 @media screen and (max-width: 590px) {
   .howitwork__line {
